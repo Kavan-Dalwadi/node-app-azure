@@ -3,7 +3,7 @@ const port = process.env.PORT || 3000;
 
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
-  const msg = 'Server running on http://localhost:${port}/\n'
+  const msg = `Server running on http://localhost:${port}/\n`
   res.end(msg);
 });
 
