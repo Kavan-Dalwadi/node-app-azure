@@ -18,5 +18,6 @@ server.listen(port, () => {
 });
 
 app.get("/get-api", function(req, res) {
+    console.log("test");
     res.status(200).send("Hello World!");
   });
