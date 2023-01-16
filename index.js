@@ -13,6 +13,10 @@ const server = http.createServer((req, res) => {
   res.end(msg);
 });
 
+server.listen(port, () => {
+  console.log(`Server running on http://localhost:${port}/`);
+});
+
 app.get("/get-api", function(req, res) {
     res.status(200).send("Hello World!");
   });
